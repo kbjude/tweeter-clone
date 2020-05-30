@@ -1,9 +1,9 @@
 <section class = "section">
   <div class = "container">
     <div class = "columns">
-    <% if user_signed_in%>
+    <% if user_signed_in? %>
       <%= render 'profile'%>
-    <%elsif%>
+    <% elsif %>
       <%= render 'trends' %>
     <% end %>
 
