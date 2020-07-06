@@ -2,9 +2,7 @@
 begin
   load File.expand_path('spring', __dir__)
 rescue LoadError => e
-  unless e.message.include?('spring')
-    raise
-  end
+  raise unless e.message.include?('spring')
 end
 require_relative '../config/boot'
 require 'rake'
